@@ -35,13 +35,13 @@
       my_password <- c("testing", "akshata")
 
       #Credentials for twitter API
-      api_key <- "zqo4O5f5Th8lQGvSZ3PLxdYpD"
+      api_key <- "xxxxxxxxxxxxxxxxxx"
       
-      api_secret <- "HWLx6nxFnVTbQQUg3TQL92s6sfIAYnITDTV3cqMOVLKmfKqQcG"
+      api_secret <- "xxxxxxxxxxxxxx"
       
-      access_token <- "3294465653-AwgILzDoNvY9dVTGqrEwjcHAKpc3cmWPEknCF7O"
+      access_token <- "xxxxxxxxxxxx"
       
-      access_token_secret <- "2o43H427BiVKzBiRBh7IPqLsR4BKGJftY6bQnzY7xlxyh"
+      access_token_secret <- "xxxxxxxxxxxx"
       
       #Creating authentication with twitter to download data
       token2 <- setup_twitter_oauth(consumer_key = api_key,consumer_secret = api_secret, access_token= access_token,
