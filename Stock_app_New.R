@@ -1535,7 +1535,7 @@
 
         From_date<- as.character(input$date3)
         To_date<- as.character(input$date4)
-        Quandl.api_key("QjHDP6zfriF56utXZLkH")
+        Quandl.api_key("xxxxxxxxxxxxxxxxx")
         
         #Downloading data from quandl for the selected precious metal from the selected time frame
         Quandl_table<-as.data.frame(Quandl(code = QuandlStock,
@@ -1583,7 +1583,7 @@
 
         QuandlStock <- as.character(Quandldata())
         print(QuandlStock)
-        Quandl.api_key("QjHDP6zfriF56utXZLkH")
+        Quandl.api_key("xxxxxxxxxxxxxxxxxxxxxxx")
         #Getting the data from quandl corresponding to the selected precious metal by the user
         prices<-as.data.frame(Quandl(code = QuandlStock, collapse = "monthly", start_date = "1968-01-01", env = NULL))
 
@@ -1859,7 +1859,7 @@
         #Going Back 13 months so the returns calculated will be for 12 months
         tenyear_date <- tenyear_date %m-% months(1)
         startdate <- as.Date(tenyear_date)
-        Quandl.api_key("QjHDP6zfriF56utXZLkH")
+        Quandl.api_key("xxxxxxxxxxxxxxxxxxxxx")
         prices<-as.data.frame(Quandl(code = QuandlStock, collapse = "monthly", start_date = startdate, env = NULL))
         
         prices<- as.data.frame(do.call(cbind, lapply(prices, rev)))
@@ -1998,7 +1998,7 @@
         #Getting a full date 10 years from now
         twentyearsagodate<- as.character(currdate)
 
-        Quandl.api_key("QjHDP6zfriF56utXZLkH")
+        Quandl.api_key("xxxxxxxxxxxxxxxxxxxxxx")
         #Getting data from quandl corresponding to the PM selected by user
         prices<-as.data.frame(Quandl(code = QuandlStock, collapse = "monthly", start_date = twentyearsagodate, env = NULL))
         
